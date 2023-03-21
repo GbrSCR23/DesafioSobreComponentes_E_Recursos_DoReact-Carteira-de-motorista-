@@ -1,24 +1,37 @@
+import detranlogo from "./assets/LogoDetranPE.png"
 import logo from './logo.svg';
 import './App.css';
+import Username from './components/Username';
+function App()
 
-function App() {
+// const lista = [
+ // { nome: "Gabriel", idade: "23", profissao: "programador"},
+ // {nome: "Junior", idade: "26", profissao: "Segurança"},
+ // {nome: "Marcelo", idade: "27", profissao: "DJ"},
+// ];
+
+
+{
   return (
+
+
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+<img src={detranlogo} alt="logo" />
+
+       
+              <Username  name="Marcelo" age={34} profession="Dj" />
+              <Username   name="Vinicius" age={18} profession="Músico" />
+              <Username  name="João" age={15} profession="Jovem Aprendiz"/>
+              <Username   name="Marcelo" age={17} profession="Mecânico" />
+
+
+
+
+      
     </div>
+    
   );
 }
 
